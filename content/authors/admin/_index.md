@@ -1,20 +1,14 @@
 ---
 # Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+title: Yezhou Wang
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Yezhou
+last_name: Wang
 
 # Pronouns (optional)
-pronouns: she/her
+pronouns: he/his
 
-# Status emoji
-status:
-  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,99 +17,102 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: McGill University
+    url: https://www.mcgill.ca/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'yezhouwang@outlook.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/YezhouWang
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/yezhouwang6/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://scholar.google.ca/citations?user=drXcPFIAAAAJ&hl=en
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Machine Learning & Data Science
+  - Computational Neuroscience
+  - Oil Painting & Badminton
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD, Computational Neuroscience
+    institution: McGill University
+    date_start: 2020-09-01
+    date_end: 2025-11-30
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      GPA: 3.92/4.0
+      
+      Thesis on _Segregation, integration, and hierarchy: A multimodal framework of cortical organization_. Supervised by [Prof Boris Bernhardt](https://www.mcgill.ca/neuro/boris-bernhardt-phd). Published 13 peer-reviewed papers in high-impact journals, such as _Nature Communications_, _Cerebral Cortex_.
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: M.Sc, Computer Application Technology
+    institution: Beijing Normal University
+    date_start: 2017-09-01
+    date_end: 2020-06-30
     summary: |
-      GPA: 3.4/4.0
+      GPA: 3.75/4.0
+
+      Outstanding Master's Graduate in Beijing (only 2 graduate students are awarded per year)
+
+  - area: BSc, Intelligence Science and Technology
+    institution: Hebei University of Technology
+    date_start: 2013-09-01
+    date_end: 2017-06-30
+    summary: |
+      GPA: 3.65/4.0
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Introduction to Artificial Intelligence
+      - Machine Learning
+      - Principles of Automation
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: PhD Candidate
+    company_name: McGill University
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2020-09-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - Led projects on the human brain, applying statistical analysis and computational modeling
+      - Developed AI tools for large-scale image quality control and predictive modeling of complex systems
+      - Applied advanced statistical modeling to analyze and predict relationships in high-dimensional data
+      - Published 13 peer-reviewed papers · Supervised 10+ trainees · Secured $200K+ research funding
+
+  - position: Data Scientist Intern
+    company_name: Max Planck Institute
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-04-01
+    date_end: 2024-07-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Applied machine learning models to analyze neural signal data and predict cognitive states
+      - Designed interactive dashboards and performed exploratory data analysis to uncover key insights
+
+  - position: Data Scientist Intern
+    company_name: University of Cambridge
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-07-01
+    date_end: 2022-09-30
+    summary: |
+      Responsibilities include:
+      - Analyzed large datasets and created visual reports to support data-driven decision-making
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: Python, Git
         description: ''
         percent: 80
         icon: code-bracket
@@ -123,7 +120,7 @@ skills:
         description: ''
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: SQL, AWS
         description: ''
         percent: 40
         icon: circle-stack
@@ -131,15 +128,15 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Hiking, badminton
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Cat, Oil Painting
         description: ''
         percent: 100
         icon: cat
-      - name: Photography
+      - name: Travelling, Photography
         description: ''
         percent: 80
         icon: camera
@@ -148,42 +145,28 @@ languages:
   - name: English
     percent: 100
   - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+    percent: 100
+  - name: French
+    percent: 30
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
+  - title: Doctoral Scholarship – FRQNT
+    url: https://frq.gouv.qc.ca/en/program/frqnt-doctoral-training-scholarships/
+    date: '2022-07-01'
+    awarder: FRQNT
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
+      I received a highly competitive fellowship from Fonds de recherche du Québec – Nature et technologies (FRQNT) to support research on neural systems using statistical analyses and machine learning.
+  - title: Outstanding Master Graduates in Beijing
+    date: '2020-06-01'
+    awarder: Beijing Municipal Education Commission
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Selected as one of two recipients of the Outstanding Master Graduates award at Beijing Normal University, Beijing (2020), recognizing academic excellence and research achievement.
 ---
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hi, I'm Yezhou, a PhD in Computational Neuroscience applying AI and data analytics to deliver actionable insights. Experienced in building scalable AI systems, deploying large language models, and driving projects from concept to real-world impact. Skilled in cross-functional collaboration, communication, mentoring, and problem-solving.
