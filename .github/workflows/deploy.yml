@@ -14,29 +14,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Setup Node.js (required for Tailwind build)
+      # 2. Setup Node.js (required for Tailwind)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # 3. Install npm dependencies (Tailwind + any JS)
-      - name: Install dependencies
-        run: npm install
+      # 3. Setup pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8  # choose a compatible version
 
-      # 4. Setup Hugo
+      # 4. Install dependencies
+      - name: Install dependencies
+        run: pnpm install
+
+      # 5. Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.148.2'
 
-      # 5. Build the Hugo site
+      # 6. Build Hugo site (includes Tailwind CSS via your package.json build script)
       - name: Build Hugo site
-        run: |
-          npm run build   # if you have Tailwind build script
-          hugo --minify   # generate public/ folder
+        run: pnpm run build
 
-      # 6. Deploy to GitHub Pages
+      # 7. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v6
         with:
