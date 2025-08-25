@@ -1,0 +1,23 @@
+# Node dependencies
+/node_modules
+/.pnpm-store
+/.pnpm
+
+# Hugo build outputs
+/public
+/.hugo_build_cache
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
