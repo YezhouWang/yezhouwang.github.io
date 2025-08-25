@@ -70,7 +70,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Fix Tailwind CLI permissions
+        if: hashFiles('package.json') != ''
+        run: chmod +x ./node_modules/.bin/tailwindcss
+
       - name: Build with Hugo
+        env:
+            PATH: ./node_modules/.bin:$PATH
         run: pnpm run build
 
       - name: Generate Pagefind search index (if applicable)
