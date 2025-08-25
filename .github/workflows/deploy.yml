@@ -22,15 +22,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build website
   build:
-    if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -38,17 +35,8 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Setup pnpm
-        if: hashFiles('package.json') != ''
-        uses: pnpm/action-setup@v4
-
-      - name: Install dependencies
-        run: |
-          # Install Tailwind CLI if package.json exists
-          if [ -f "package.json" ]; then
-            echo "Installing Tailwind dependencies..."
-            pnpm install || npm install
-          fi
+      - name: Install pnpm globally
+        run: npm install -g pnpm@10.14.0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -56,32 +44,19 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      - uses: actions/cache@v4
-        with:
-          path: |
-            /tmp/hugo_cache_runner/
-            node_modules/
-            modules/*/node_modules/
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod', '**/package-lock.json', '**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Fix Tailwind CLI permissions
-        if: hashFiles('package.json') != ''
         run: chmod +x ./node_modules/.bin/tailwindcss
 
       - name: Build with Hugo
         env:
-            PATH: ./node_modules/.bin:$PATH
+          PATH: ./node_modules/.bin:$PATH
         run: pnpm run build
 
       - name: Generate Pagefind search index (if applicable)
         run: |
-          # Check if site uses Pagefind
           if [ -f "package.json" ] && grep -q "pagefind" package.json; then
             pnpm dlx pagefind --source "public" || npx pagefind --source "public"
           elif [ -f "netlify.toml" ] && grep -q "pagefind" netlify.toml; then
