@@ -36,8 +36,8 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 10.14.0
-          run_install: false
+          version: 10.15.0
+          run_install: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
