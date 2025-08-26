@@ -33,8 +33,11 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Install pnpm globally
-        run: npm install -g pnpm@10.14.0
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.14.0
+          run_install: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -55,6 +58,11 @@ jobs:
 
       - name: Fix Tailwind CLI permissions
         run: chmod +x ./node_modules/.bin/tailwindcss
+
+      - run: hugo version
+      - run: which hugo
+      - run: node -v
+      - run: pnpm -v
 
       - name: Build site (Hugo + Tailwind)
         env:
