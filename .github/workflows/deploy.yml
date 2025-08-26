@@ -53,9 +53,6 @@ jobs:
         with:
           go-version: ${{ env.GO_VERSION }}
 
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-
       - name: Fix Tailwind CLI permissions
         run: chmod +x ./node_modules/.bin/tailwindcss
 
@@ -65,8 +62,6 @@ jobs:
       - run: pnpm -v
 
       - name: Build site (Hugo + Tailwind)
-        env:
-          PATH: ./node_modules/.bin:$PATH
         run: pnpm run build
 
       - name: Generate Pagefind search index (if applicable)
