@@ -2,11 +2,16 @@
 body {
   background: white !important;  /* ensures other sections are white */
 }
-
-/* Add background ONLY to the first hero section */
+/* Ensure hero section background is your SVG */
 .home-section:first-of-type {
   background-image: url("/media/stacked-peaks.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  background-color: transparent !important;
+}
+
+/* Kill the black overlay */
+.home-section:first-of-type::before {
+  background: none !important;
 }
