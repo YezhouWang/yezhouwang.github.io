@@ -1,7 +1,12 @@
+/* Remove background from <body> */
 body {
+  background: white !important;  /* ensures other sections are white */
+}
+
+/* Add background ONLY to the first hero section */
+.home-section:first-of-type {
   background-image: url("/media/stacked-peaks.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
 }
