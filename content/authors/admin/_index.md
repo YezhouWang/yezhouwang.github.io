@@ -17,12 +17,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: Data Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: McGill University
-    url: https://www.mcgill.ca/
+  - name: Doric Lenses Inc
+    url: https://doriclenses.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -73,12 +73,23 @@ education:
       - Machine Learning
       - Principles of Automation
 work:
-  - position: PhD Candidate
+  - position: Data Scientist Intern
+    company_name: Doric Lenses Inc.
+    company_url: ''
+    company_logo: ''
+    date_start: 2025-10-30
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - Accelerated neuroimaging pipeline processing using deep learning while maintaining data quality
+      - Benchmarked and validated pipeline performance, balancing runtime efficiency and analytical accuracy in real-world datasets
+
+  - position: PhD in Neuroscience
     company_name: McGill University
     company_url: ''
     company_logo: ''
     date_start: 2020-09-01
-    date_end: ''
+    date_end: 2025-11-30
     summary: |2-
       Responsibilities include:
       - Led projects on the human brain, applying statistical analysis and computational modeling
@@ -169,4 +180,4 @@ awards:
 
 ## About Me
 
-Hi, I'm Yezhou, a PhD in Computational Neuroscience applying AI and data analytics to deliver actionable insights. Experienced in building scalable AI systems, deploying large language models, and driving projects from concept to real-world impact. Skilled in cross-functional collaboration, communication, mentoring, and problem-solving.
+Hi, I’m Yezhou, a Data Scientist at Doric Lense with a PhD in Computational Neuroscience. I apply AI and data analytics to generate actionable insights and solve real world problems. I have experience building and deploying scalable machine learning systems, and delivering projects from concept to production through collaboration, communication, mentoring, and problem solving.
