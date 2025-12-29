@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: https://drive.google.com/file/d/1sdj2Xcyw7SVQes0fxgqsuLlKtY-bqoE8/view?usp=sharing
+        url: https://drive.google.com/file/d/1We1iBQtZuxNskyhOtB5d9rKPFBaH4PqB/view?usp=sharing
     design:
       css_class: dark
       # Avatar customization
@@ -39,13 +39,15 @@ sections:
       title: '💻 Projects'
       subtitle: ''
       text: |-
+        **Deep Learning Integration for Scientific Software (DANSE) – Python, PyTorch, Data Pipelines**  
+        • Applied deep learning to production software, automating complex tasks and improving robustness.  
+        • Deployed research models into reliable production pipelines for real-world applications.  
+
         **AI Model and Computer Vision – PyTorch, FastAPI, Docker, NumPy**  
         • Trained AI models for image recognition with 99% accuracy, reducing processing time by 90%.  
         • Integrated the model into standardized data pipeline, ensuring reproducibility with existing workflows.  
         • Deployed the model as a scalable web service using FastAPI and Docker, cutting manual workload by 90% and improving operational efficiency.  
 
-        **Face Recognition System – C#, OpenCV**  
-        • Designed a real-time verification system using classical computer vision and ML classification.
     design:
       columns: '1'
   - block: collection
